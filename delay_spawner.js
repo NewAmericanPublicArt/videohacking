@@ -3,7 +3,7 @@ outlets = 0;
 var delays = new Array();
 var glue;
 var p = this.patcher;
-var pwindow = p.getnamed("pwindow");
+var pwindow = p.getnamed("window");
 var camera = p.getnamed("camera");
 
 function msg_int(count) {

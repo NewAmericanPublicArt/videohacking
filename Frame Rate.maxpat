@@ -4,11 +4,11 @@
 		"appversion" : 		{
 			"major" : 6,
 			"minor" : 1,
-			"revision" : 3,
+			"revision" : 7,
 			"architecture" : "x86"
 		}
 ,
-		"rect" : [ 0.0, 44.0, 1476.0, 902.0 ],
+		"rect" : [ 0.0, 44.0, 469.0, 401.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
 		"default_fontsize" : 9.0,
@@ -29,6 +29,37 @@
 		"tags" : "",
 		"boxes" : [ 			{
 				"box" : 				{
+					"fontname" : "Avenir Next Demi Bold",
+					"fontsize" : 14.0,
+					"frgb" : 0.0,
+					"id" : "obj-1",
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 202.0, 267.0, 194.0, 26.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 24.0, 101.0, 144.0, 26.0 ],
+					"text" : "[esc] for fullscreen",
+					"textjustification" : 1
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"fontname" : "Monaco",
+					"fontsize" : 9.0,
+					"id" : "obj-5",
+					"maxclass" : "newobj",
+					"numinlets" : 0,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 126.0, 309.0, 65.0, 18.0 ],
+					"text" : "fullscreen"
+				}
+
+			}
+, 			{
+				"box" : 				{
 					"fontname" : "Monaco",
 					"fontsize" : 9.0,
 					"id" : "obj-8",
@@ -41,7 +72,7 @@
 						"appversion" : 						{
 							"major" : 6,
 							"minor" : 1,
-							"revision" : 3,
+							"revision" : 7,
 							"architecture" : "x86"
 						}
 ,
@@ -295,8 +326,8 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 102.0, 277.0, 65.0, 16.0 ],
-					"text" : "size $1 $2"
+					"patching_rect" : [ 102.0, 277.0, 59.0, 16.0 ],
+					"text" : "dim $1 $2"
 				}
 
 			}
@@ -330,14 +361,15 @@
 			}
 , 			{
 				"box" : 				{
+					"fontname" : "Monaco",
+					"fontsize" : 9.0,
 					"id" : "obj-4",
-					"maxclass" : "jit.pwindow",
+					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 2,
-					"outlettype" : [ "", "" ],
-					"patching_rect" : [ 83.0, 304.0, 320.0, 240.0 ],
-					"presentation" : 1,
-					"presentation_rect" : [ 24.0, 98.0, 320.0, 240.0 ]
+					"outlettype" : [ "bang", "" ],
+					"patching_rect" : [ 83.0, 339.0, 108.0, 18.0 ],
+					"text" : "jit.window display"
 				}
 
 			}
@@ -488,6 +520,15 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-4", 0 ],
+					"disabled" : 0,
+					"hidden" : 0,
+					"source" : [ "obj-5", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-3", 0 ],
 					"disabled" : 0,
 					"hidden" : 0,
@@ -515,7 +556,14 @@
 
 			}
  ],
-		"dependency_cache" : [  ]
+		"dependency_cache" : [ 			{
+				"name" : "fullscreen.maxpat",
+				"bootpath" : "/Users/edwardloveall/Code/Max MSP Jitter/NAPA",
+				"patcherrelativepath" : ".",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+ ]
 	}
 
 }
