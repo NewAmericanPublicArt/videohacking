@@ -29,6 +29,39 @@
 		"tags" : "",
 		"boxes" : [ 			{
 				"box" : 				{
+					"fontname" : "Helvetica Bold",
+					"fontsize" : 14.0,
+					"frgb" : 0.0,
+					"id" : "obj-15",
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 82.25, 620.0, 132.0, 20.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 234.5, 17.0, 108.0, 20.0 ],
+					"text" : "Resolution",
+					"textcolor" : [ 0.188235, 0.419608, 0.623529, 1.0 ],
+					"textjustification" : 1
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"fontname" : "Monaco",
+					"fontsize" : 9.0,
+					"frgb" : 0.0,
+					"id" : "obj-40",
+					"linecount" : 2,
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 225.0, 428.0, 150.0, 29.0 ],
+					"text" : "jit.gl.videoplane display @scale 1.777 1. 1."
+				}
+
+			}
+, 			{
+				"box" : 				{
 					"fontname" : "Monaco",
 					"fontsize" : 9.0,
 					"id" : "obj-13",
@@ -337,25 +370,6 @@
 			}
 , 			{
 				"box" : 				{
-					"fontname" : "Helvetica Bold",
-					"fontsize" : 11.0,
-					"frgb" : 0.0,
-					"id" : "obj-41",
-					"maxclass" : "comment",
-					"numinlets" : 1,
-					"numoutlets" : 0,
-					"patching_rect" : [ 124.25, 563.0, 106.0, 17.0 ],
-					"presentation" : 1,
-					"presentation_linecount" : 2,
-					"presentation_rect" : [ 253.5, 17.0, 62.0, 28.0 ],
-					"text" : "width in px",
-					"textcolor" : [ 0.504032, 0.504032, 0.504032, 1.0 ],
-					"textjustification" : 1
-				}
-
-			}
-, 			{
-				"box" : 				{
 					"fontname" : "Monaco",
 					"fontsize" : 9.0,
 					"id" : "obj-38",
@@ -395,7 +409,7 @@
 					"parameter_enable" : 0,
 					"patching_rect" : [ 350.75, 74.0, 62.0, 26.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 253.5, 49.0, 62.0, 26.0 ],
+					"presentation_rect" : [ 257.5, 49.0, 62.0, 26.0 ],
 					"triangle" : 0
 				}
 
@@ -1010,8 +1024,8 @@
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "jit_matrix", "" ],
-					"patching_rect" : [ 26.75, 312.0, 119.0, 18.0 ],
-					"text" : "jit.dimmap @invert 1",
+					"patching_rect" : [ 26.75, 312.0, 167.0, 18.0 ],
+					"text" : "jit.dimmap @invert 1 @adapt 1",
 					"varname" : "window"
 				}
 
